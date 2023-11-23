@@ -48,7 +48,7 @@ btn.addEventListener('click',()=>{
     
     query({"inputs": val}).then((response) => {
         // Use image
-        console.log("working1");
+        
         let imgURL = URL.createObjectURL(response);
         let div=document.createElement('div');
         div.className='pic';
@@ -63,7 +63,6 @@ btn.addEventListener('click',()=>{
         div.style.marginBottom='3rem';
         div.appendChild(head);
         div.appendChild(img);
-        console.log(img);
         document.querySelector(`#box-${i}`).appendChild(div);
         
         document.querySelector('.gallery').style.display='flex';
