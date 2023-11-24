@@ -34,12 +34,7 @@ let btn = document.getElementById('btn');
 
 
 btn.addEventListener('click',()=>{
-    for(let j=1;j<=10;j++){
-        if(document.getElementById(`div${j}`).value==''){
-            alert("fill all the input fields");
-            return;
-        }
-    }
+    
     for(let i=1;i<=10;i++){
     let val = document.getElementById(`div${i}`).value;
     console.log(val);
@@ -64,7 +59,6 @@ btn.addEventListener('click',()=>{
         div.appendChild(head);
         div.appendChild(img);
         document.querySelector(`#box-${i}`).appendChild(div);
-        z
         document.querySelector('.gallery').style.display='flex';
         document.querySelector(`#box-${i}`).style.display='block';
     
