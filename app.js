@@ -51,7 +51,7 @@ btn.addEventListener('click',()=>{
         
         let imgURL = URL.createObjectURL(response);
         let div=document.createElement('div');
-        div.className='pic';
+        
         let head=document.createElement('h1');
         head.innerText=`COMIC-${i}`;
         let img=document.createElement('img');
@@ -59,12 +59,12 @@ btn.addEventListener('click',()=>{
         img.style.width='180px';
         img.src=imgURL;
         div.style.display='flex';
-        div.style.flexDirection='column';
+        div.style.flexDirection='row';
         div.style.marginBottom='3rem';
         div.appendChild(head);
         div.appendChild(img);
         document.querySelector(`#box-${i}`).appendChild(div);
-        
+        z
         document.querySelector('.gallery').style.display='flex';
         document.querySelector(`#box-${i}`).style.display='block';
     
